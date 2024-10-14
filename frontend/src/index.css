@@ -1,13 +1,90 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Baron Kuffner';
+  src: url('/fonts/BaronKuffner-Regular.woff2') format('woff2'),
+       url('/fonts/BaronKuffner-Regular.woff') format('woff'),
+       url('/fonts/BaronKuffner-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CheeseBurga';
+  src: url('./assets/CHEESEBURGA demo.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-baron {
+  font-family: 'Baron Kuffner', sans-serif;
+}
+
+.font-cheeseburga {
+  font-family: 'CheeseBurga', sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Responsive Background Image Classes */
+.image {
+  background-image: url('H:/PixelBrain/AlabayHeritage/src/assets/Alabay Games/Alabay heritage prev gradient.png');
+  width: 100%;
+  height: 30vh; /* Adjust height to be responsive */
+  background-size: cover; /* Ensure the background covers the entire element */
+  background-position: center; /* Center the background image */
+}
+
+.image2 {
+  background-image: url('H:/PixelBrain/AlabayHeritage/src/images/DALL·E 2024-07-23 00.50.44 - A 3D cartoon illustration of a furry Central Asian Shepherd Alabay dog with big eyes, wearing a cap with a dollar logo on its head and counting money_ 1.png');
+  width: 100%;
+  height: auto; /* Set to auto for responsiveness */
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio for responsive design */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Media Queries for further adjustments */
+@media (max-width: 768px) {
+  .image {
+    height: 40vh; /* Adjust height for smaller screens */
+  }
+  
+  .image2 {
+    height: auto; /* Ensure proper scaling on smaller devices */
+    aspect-ratio: 4 / 3; /* Adjust the aspect ratio for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    height: 50vh; /* Further adjust height for extra small screens */
+  }
+  
+  .image2 {
+    aspect-ratio: 1 / 1; /* Square aspect ratio for very small devices */
+  }
 }
