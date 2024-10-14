@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="LLM" width="60%" alt="ALABAY.GIT-logo">
+  <img src="[LLM](https://github.com/DivyanshUpadhyay/Alabay/blob/main/frontend/src/assets/images/DALL%C2%B7E%202024-07-14%2020.01.25%20-%20A%20wide%203D%20cartoon%20illustration%20of%20a%20group%20of%20furry%20Central%20Asian%20Shepherd%20dog%20friends.%20The%20dogs%20should%20have%20joyful%20expressions%20with%20wide%20smiles%2C%20ears_%202.png)" width="60%" alt="ALABAY.GIT-logo">
 </p>
 <p align="center">
     <h1 align="center">ALABAY.GIT</h1>
